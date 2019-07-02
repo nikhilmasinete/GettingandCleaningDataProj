@@ -1,4 +1,6 @@
 Background:
+A group of 30 people (refered as subjects in the project) were monitored by wearable smart devices. Through acclerometeres few quantities listed in the features column were measured while performing 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, LAYING, SITTING, STANDING). The obtained data was splitted into train and test datasets.
+
 Details like 
 	- How data was collected?
 	- What were the activities considred?
@@ -8,8 +10,7 @@ Details like
 can be found in features_info.txt
  
 What was done in the project?
-In this project the training data and the test data were merged. The activity associated to each observation is added to the dataset. Then the mean and standard deviation variables of every measured quantity was collected. 
-The variables number reduced from 561 to 79. Then the mean of each variable for every activity is evaluated and given as Tidy_Data.txt.
+In this project the training data and the test data were merged. The activity associated to each observation is added to the dataset. Then the mean and standard deviation variables of every measured quantity was collected. Then the mean of each variable for each subject for each activity is evaluated and given as Tidy_Data.txt.
 
 Features:
 tBodyAcc-XYZ
