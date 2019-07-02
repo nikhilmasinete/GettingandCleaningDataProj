@@ -3,12 +3,12 @@ Background:
 A group of 30 people (refered as subjects in the project) were monitored by wearable smart devices. Through acclerometeres few quantities listed in the features column were measured while performing 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, LAYING, SITTING, STANDING). The obtained data was splitted into train and test datasets.
 
 Introduction to datasets:
-  -> X_train dataset consists of 561 variables and 7352 observations.
-  -> X_test dataset consists of 561 variables and 2947 observations.
-  -> y_train dataset consists of 1 variable and 7352 observations. This explains the activity performed while taking the measurement.
-  -> y_test dataset consists of 1 variable and 2947 observations. This explains the activity performed while taking the measurement.
-  -> subject_train dataset consists of 1 variable and 7352 observations. This dataset tells us the subject.
-  -> subject_test dataset consists of 1 variable and 2947 observations. This dataset tells us the subject.
+  ->  X_train dataset consists of 561 variables and 7352 observations.
+  ->  X_test dataset consists of 561 variables and 2947 observations.
+  ->  y_train dataset consists of 1 variable and 7352 observations. This explains the activity performed while taking the measurement.
+  ->  y_test dataset consists of 1 variable and 2947 observations. This explains the activity performed while taking the measurement.
+  ->  subject_train dataset consists of 1 variable and 7352 observations. This dataset tells us the subject.
+  ->  subject_test dataset consists of 1 variable and 2947 observations. This dataset tells us the subject.
 
 Methodology:
 This is a project for the Coursera Course Getting and Cleadning Data. The run_analysis file performs the following tasks
