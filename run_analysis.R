@@ -18,7 +18,7 @@ total <- rbind.data.frame(train,test)
 # Assigning the names to the variables of the dataset
 names(total) <- features[,2]
 # Seperating the mean and standard deviation variables
-cols <- grep('mean()|std()', names(total), value=T)
+cols <- grep('mean\\(\\)|std\\(\\)', names(total), value=T)
 sortedData <- total[cols]
 # Adding the Activity label column to the dataset
 sortedData <- cbind.data.frame(y_total,sortedData)
@@ -33,8 +33,9 @@ names(sortedData)[2] <- "Activity Label"
 names(sortedData)<-gsub("-","",names(sortedData),)
 names(sortedData)<-gsub("\\(\\)","",names(sortedData),)
 # Creating a tidy data frame
-tidy_Data <- matrix(0,nrow = 6,ncol = 79)
+tidy_Data <- matrix(0,nrow = 6,ncol = 66)
 tidy_Data <- data.frame(tidy_Data)
+# Evaluating the mean of every variable for each activity
 for (i in 1:6){
   b <- (t(colMeans(filter(sortedData,sortedData$`Activity Label`==i)[,-(1:2)])))
   tidy_Data[i,] <- b
@@ -44,3 +45,4 @@ names(tidy_Data)<-gsub("-","",names(tidy_Data),)
 names(tidy_Data)<-gsub("\\(\\)","",names(tidy_Data),)
 tidy_Data <- cbind(labels[,2],tidy_Data)
 names(tidy_Data)[1] <- "Activity"
+view(tidy_Data)
