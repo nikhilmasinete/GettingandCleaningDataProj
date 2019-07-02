@@ -1,4 +1,4 @@
-# GettingandCleaningDataProj
+# Getting and Cleaning Data Project
 This is a project for the Coursera Course Getting and Cleadning Data. The run_analysis file performs the following tasks
   - Imports the training data, test data, features file, activity file into RStudio.
   - Using rbind function the test data and the train data is merged.
