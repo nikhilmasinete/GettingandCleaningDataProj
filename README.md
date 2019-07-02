@@ -5,4 +5,5 @@ This is a project for the Coursera Course Getting and Cleadning Data. The run_an
   - Using the grep funtion the variables measuring the mean and standard deviation of the features are segregated
   - A new data set called sortedData contains all observations with the above variables.
   - Activity associated to each observation is linked to the sorted Data.
-  - Finally, in the tidy_Data mean of every variable for each activity is calculated and given as output
+  - Using for loop and filter funtion the mean value of every varible for each activity is evaluated.
+  - Finally, the tidy_Data is given as output.
