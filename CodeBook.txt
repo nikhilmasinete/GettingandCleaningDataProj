@@ -1,0 +1,35 @@
+Background:
+Details like 
+	- How data was collected?
+	- What were the activities considred?
+	- What were quatities measured?
+	- How was data processed?
+	- What were the set of variables considered?
+can be found in features_info.txt
+ 
+What was done in the project?
+In this project the training data and the test data were merged. The activity associated to each observation is added to the dataset. Then the mean and standard deviation variables of every measured quantity was collected. 
+The variables number reduced from 561 to 79. Then the mean of each variable for every activity is evaluated and given as Tidy_Data.txt.
+
+Features:
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+Variables evaluated:
+mean - Mean
+std - Standard Devaition
