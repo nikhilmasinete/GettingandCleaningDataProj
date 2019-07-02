@@ -1,13 +1,13 @@
 Background:
 A group of 30 people (refered as subjects in the project) were monitored by wearable smart devices. Through acclerometeres few quantities listed in the features column were measured while performing 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, LAYING, SITTING, STANDING). The obtained data was splitted into train and test datasets.
 
-Details like 
-	- How data was collected?
-	- What were the activities considred?
-	- What were quatities measured?
-	- How was data processed?
-	- What were the set of variables considered?
-can be found in features_info.txt
+Introduction to datasets:
+X_train dataset consists of 561 variables and 7352 observations.
+X_test dataset consists of 561 variables and 2947 observations.
+y_train dataset consists of 1 variable and 7352 observations. This explains the activity performed while taking the measurement.
+y_test dataset consists of 1 variable and 2947 observations. This explains the activity performed while taking the measurement.
+subject_train dataset consists of 1 variable and 7352 observations. This dataset tells us the subject.
+subject_test dataset consists of 1 variable and 2947 observations. This dataset tells us the subject.
  
 What was done in the project?
 In this project the training data and the test data were merged. The activity associated to each observation is added to the dataset. Then the mean and standard deviation variables of every measured quantity was collected. Then the mean of each variable for each subject for each activity is evaluated and given as Tidy_Data.txt.
@@ -34,3 +34,6 @@ fBodyGyroJerkMag
 Variables evaluated:
 mean - Mean
 std - Standard Devaition
+
+Output dataset:
+The output dataset Tidy_Data contains average of every variable for each activity performed by each subject.
